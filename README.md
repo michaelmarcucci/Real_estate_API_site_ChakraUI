@@ -1,34 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## NextJS Real Estate API site built w/ ChakraUI
 
-## Getting Started
+Built to practice developing web apps using 3rd-party API plugins and using responsive design tools like Chakra UI. Certain comments were left in the code as a reminder of my troubleshooting efforts/experimentation, while others indicate innovations I made over the original project from Javascript Mastery. The most notable being that my project fixes an issue where a boolean value 'FurnishingStatus' could be left blank by the submitter thus providing nothing to render for that element on the property details page. This was fixed on line 46 in [id].js in the 'property' sub-folder of pages with a ternary expression.
 
-First, run the development server:
+## Tech Used & Learning Takeaways
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Tech: Next.js, Chakra UI, Bayut API from RapidAPI, CSS, HTML
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Takeaways: Documentation research and integration of 3rd-party API endpoints, component & module libraries, building, using async data-fetching in Next.js
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Why I Built This Project
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+This project is intended as a learning experience for assembling and properly styling a NextJS app using a styled React component library (ChakraUI) and doing a thorough documentation dive into new tools for me like Chakra UI, Next.js, and the Bayut API endpoint detail retieved from from an axios GET request.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## How the File Structure is Setup
 
-## Learn More
+This project was created using the standard npx create-react-app command. There are two kinds of react component folders ( components and containers ) with each containing a folder for the jsx component listed and its corresponding css file. 
 
-To learn more about Next.js, take a look at the following resources:
+## Improvements to be Made With More Time/Experience
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The current mobile view on smartphones does not effectvely scale down the images on the property details page. I also want to add a snap to image functionality in the property details page scroll view to imrove its behavior wheb used in conjunction with the image arrow buttons.
